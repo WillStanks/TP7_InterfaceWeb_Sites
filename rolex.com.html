@@ -1,217 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rolex</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link
+      href="https://code.jquery.com/ui/1.12.1/themes/dark-hive/jquery-ui.css"
+      rel="stylesheet"
+    />
+    <link id="lien-css" rel="stylesheet" href="styles/modele11.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rolex</title>
-  <link rel="stylesheet" href="styles/base.css" />
-  <link id="lien-css" rel="stylesheet" href="styles/modele11.css" />
-</head>
+  <body>
+    <div id="global">
+      <div id="entete">
+        <header id="style-header">
+          <h2 class="titre">Rolex</h2>
+          <div id="style-bouton-glissant">
+            <h3>Modele 8</h3>
+            <label class="switch">
+              <input type="checkbox" id="bouton-switch" checked />
+              <span class="glisse rond"></span>
+            </label>
+            <h3>Modele 11</h3>
+          </div>
+        </header>
+      </div>
+      <div id="centre">
+        <div id="centre-bis">
+          <div id="navigation">
+            <ul id="menu-anime">
+              <li class="gauche bouton1">
+                <a href="index.html">Acceuil</a>
+              </li>
+              <li class="gauche bouton2">
+                <a href="rolex.com.html">&#8627;Rolex</a>
+                <ul>
+                  <li class="item-menu">
+                    <a href="rolex.com.html#gallerie" id="sous-element">
+                      Gallerie
+                    </a>
+                  </li>
+                  <li class="item-menu">
+                    <a href="rolex.com.html#tab1" id="sous-element">
+                      Tableau 1
+                    </a>
+                  </li>
+                  <li class="item-menu">
+                    <a href="rolex.com.html#tab2" id="sous-element">
+                      Tableau 2
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gauche bouton3">
+                <a href="tagheuer.com.html">&#8627;Tag Heuer</a>
+                <ul>
+                  <li class="item-menu">
+                    <a href="rolex.com.html#gallerie" id="sous-element">
+                      Gallerie
+                    </a>
+                  </li>
 
-<body>
-  <div id="global">
-    <div id="entete">
-      <header id="style-header">
-        <h2 class="titre">Rolex</h2>
-        <div id="style-bouton-glissant">
-          <h3>Modele 8</h3>
-          <label class="switch">
-            <input type="checkbox" id="bouton-switch" checked />
-            <span class="glisse rond"></span>
-          </label>
-          <h3>Modele 11</h3>
-        </div>
-      </header>
-    </div>
-    <div id="centre">
-      <div id="centre-bis">
-        <div id="navigation">
-          <ul id="menu-anime">
-            <li class="gauche bouton1">
-              <a href="index.html">Acceuil</a>
-            </li>
-            <li class="gauche bouton2">
-              <a href="rolex.com.html">&#8627;Rolex</a>
-              <ul>
-                <li class="item-menu">
-                  <a href="rolex.com.html#tab1" id="sous-element">Tableau 1</a>
-                </li>
-                <li class="item-menu">
-                  <a href="rolex.com.html#tab2" id="sous-element">Tableau 2</a>
-                </li>
-              </ul>
-            </li>
-            <li class="gauche bouton3">
-              <a href="tagheuer.com.html">&#8627;Tag Heuer</a>
-              <ul>
-                <li class="item-menu">
-                  <a href="tagheuer.com.html#tab1" id="sous-element">Tableau 1</a>
-                </li>
-                <li class="item-menu">
-                  <a href="tagheuer.com.html#tab2" id="sous-element">Tableau 2</a>
-                </li>
-              </ul>
-            </li>
-            <li class="gauche bouton4">
-              <a href="montblanc.com.html">&#8627;Mont-Blanc</a>
-              <ul>
-                <li class="item-menu">
-                  <a href="montblanc.com.html#tab1" id="sous-element">Tableau 1</a>
-                </li>
-                <li class="item-menu">
-                  <a href="montblanc.com.html#tab2" id="sous-element">Tableau 2</a>
-                </li>
-              </ul>
-            </li>
-            <li class="gauche bouton5">
-              <a href="conclusion.html">Conclusion</a>
-            </li>
-          </ul>
-        </div>
-        <div id="secondaire">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-            est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-            velit, sed quia non numquam eius modi tempora incidunt ut labore
-            et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-            veniam, quis nostrum exercitationem ullam corporis suscipit
-            laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-            vel eum iure reprehenderit qui in ea voluptate velit esse quam
-
-            nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-            voluptas nulla pariatur?
-          </p>
-        </div>
-        <div id="principal">
-          <section>
-            <p class="images-memo">
-              Vous pouvez cliquez sur les images pour les agrandir!
+                  <li class="item-menu">
+                    <a href="tagheuer.com.html#tab1" id="sous-element"
+                      >Tableau 1</a
+                    >
+                  </li>
+                  <li class="item-menu">
+                    <a href="tagheuer.com.html#tab2" id="sous-element"
+                      >Tableau 2</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="gauche bouton4">
+                <a href="montblanc.com.html">&#8627;Mont-Blanc</a>
+                <ul>
+                  <li class="item-menu">
+                    <a href="rolex.com.html#gallerie" id="sous-element">
+                      Gallerie
+                    </a>
+                  </li>
+                  <li class="item-menu">
+                    <a href="montblanc.com.html#tab1" id="sous-element"
+                      >Tableau 1</a
+                    >
+                  </li>
+                  <li class="item-menu">
+                    <a href="montblanc.com.html#tab2" id="sous-element"
+                      >Tableau 2</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="gauche bouton5">
+                <a href="conclusion.html">Conclusion</a>
+              </li>
+            </ul>
+          </div>
+          <div id="secondaire">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <div class="images-site">
-              <img id="img-1-p" src="images/ImageDeRolex.jpg" width="70" height="70" class="mini" />
-              <img id="img-2-p" src="images/ImageDeRolex3.webp" width="70" height="70" class="mini" />
-              <img id="img-3-p" src="images/ImageDeRolex4.webp" width="70" height="70" class="mini" />
-              <img id="img-4-p"
-                src="https://content.rolex.com/dam/homepage/grid/history-and-watchmaking/watchmaking/the-rolex-expertise/homepage-watchmaking-the-rolex-expertise_movt_4130_1911cw_002.jpg?imwidth=1140"
-                width="70" height="70" class="mini" />
-              <img id="grande-img" height="400" width="500" src="images/ImageDeRolex.jpg" />
-            </div>
-            <h3>Informations générales sur le site</h3>
-            <p>Rolex représente une compagnie de montre de luxe.</p>
-            <table id="tab1">
-              <thead>
-                <caption>
-                  Caractéristiques sur le site
-                </caption>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Couleur/images de fond</td>
-                  <td>
-                    Une vidéo qui joue automatiquement ainsi que plusieurs
-                    images de fond. La couleur de fond est le blanc.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Couleur du texte</td>
-                  <td>
-                    Blanc(sur les images et les fonds sombres), noir(sur les
-                    images de montres et les fonds blancs), vert(sur les
-                    boutons), et une couleur spéciale qui change quand on
-                    descend la page sur une des titres.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Interface de navigation</td>
-                  <td>
-                    Menu positionné à gauche. Il apparait quand on clique sur
-                    un bouton. Il permet de se déplacer dans plusieurs autres
-                    pages du site. Dans ce menu, on peut changer la langue du
-                    site pour un des 22 choix offerts! (anglais, français,
-                    allemand...)
-                  </td>
-                </tr>
-                <tr>
-                  <td>Nombre d'écrans</td>
-                  <td>6 écrans, avec mon écran de 21 pouces.</td>
-                </tr>
-                <tr>
-                  <td>Présence de vidéos et d'animations</td>
-                  <td>
-                    Il y a une video en haut de la page d'acceuil, lorsqu'on
-                    arrive sur le site. Il n'y a pas d'animations spéciales.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Publicité</td>
-                  <td>
-                    Il n'y a pas de publicité externe car c'est un site qui
-                    vend des produits.
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <table class="tableau-styles" id="tab2">
-              <thead>
-                <caption>
-                  Types de contenu
-                </caption>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Version HTML</td>
-                  <td>
-                    HTML5, qu'on peut remarquer par la balise au début de la
-                    page: &lt;!DOCTYPE html>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Style de la page</td>
-                  <td>
-                    La page utilise la balise style directement dans le
-                    fichier HTML. On le ramarque par les balises style
-                    incluses dans la page html. Ceci est surprenant puisque ça
-                    prend beaucoup de place dans le code et ce n'est pas
-                    sastisfaisant visiblement.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Type de script</td>
-                  <td>
-                    Ce site utilise 4 scripts internes et 4 scripts externes.
-                    Il n'utilise pas de jQuery ni d'autre librairie.
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+              velit, sed quia non numquam eius modi tempora incidunt ut labore
+              et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+              veniam, quis nostrum exercitationem ullam corporis suscipit
+              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
+              vel eum iure reprehenderit qui in ea voluptate velit esse quam
+              nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+              voluptas nulla pariatur?
+            </p>
+          </div>
+          <div id="principal">
+            <section>
+              <div id="accordeon">
+                <h2>Gallerie</h2>
+                <div>
+                  <p class="images-memo">
+                    Vous pouvez cliquez sur les images pour les agrandir!
+                  </p>
+                  <div class="images-site">
+                    <img
+                      id="img-1-p"
+                      src="images/ImageDeRolex.jpg"
+                      width="70"
+                      height="70"
+                      class="mini"
+                    />
+                    <img
+                      id="img-2-p"
+                      src="images/ImageDeRolex3.webp"
+                      width="70"
+                      height="70"
+                      class="mini"
+                    />
+                    <img
+                      id="img-3-p"
+                      src="images/ImageDeRolex4.webp"
+                      width="70"
+                      height="70"
+                      class="mini"
+                    />
+                    <img
+                      id="img-4-p"
+                      src="https://content.rolex.com/dam/homepage/grid/history-and-watchmaking/watchmaking/the-rolex-expertise/homepage-watchmaking-the-rolex-expertise_movt_4130_1911cw_002.jpg?imwidth=1140"
+                      width="70"
+                      height="70"
+                      class="mini"
+                    />
+                    <img
+                      id="grande-img"
+                      height="400"
+                      width="500"
+                      src="images/ImageDeRolex.jpg"
+                    />
+                  </div>
+                </div>
+                <h2>Tableau Informations générales sur le site</h2>
+                <div>
+                  <h3>Informations générales sur le site</h3>
+                  <p>Rolex représente une compagnie de montre de luxe.</p>
+                  <table>
+                    <thead>
+                      <caption>
+                        Caractéristiques sur le site
+                      </caption>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Couleur/images de fond</td>
+                        <td>
+                          Une vidéo qui joue automatiquement ainsi que plusieurs
+                          images de fond. La couleur de fond est le blanc.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Couleur du texte</td>
+                        <td>
+                          Blanc(sur les images et les fonds sombres), noir(sur
+                          les images de montres et les fonds blancs), vert(sur
+                          les boutons), et une couleur spéciale qui change quand
+                          on descend la page sur une des titres.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Interface de navigation</td>
+                        <td>
+                          Menu positionné à gauche. Il apparait quand on clique
+                          sur un bouton. Il permet de se déplacer dans plusieurs
+                          autres pages du site. Dans ce menu, on peut changer la
+                          langue du site pour un des 22 choix offerts! (anglais,
+                          français, allemand...)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Nombre d'écrans</td>
+                        <td>6 écrans, avec mon écran de 21 pouces.</td>
+                      </tr>
+                      <tr>
+                        <td>Présence de vidéos et d'animations</td>
+                        <td>
+                          Il y a une video en haut de la page d'acceuil,
+                          lorsqu'on arrive sur le site. Il n'y a pas
+                          d'animations spéciales.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Publicité</td>
+                        <td>
+                          Il n'y a pas de publicité externe car c'est un site
+                          qui vend des produits.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <h2>Tableau Types de contenu</h2>
+                <div>
+                  <table class="tableau-styles">
+                    <thead>
+                      <caption>
+                        Types de contenu
+                      </caption>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Version HTML</td>
+                        <td>
+                          HTML5, qu'on peut remarquer par la balise au début de
+                          la page: &lt;!DOCTYPE html>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Style de la page</td>
+                        <td>
+                          La page utilise la balise style directement dans le
+                          fichier HTML. On le ramarque par les balises style
+                          incluses dans la page html. Ceci est surprenant
+                          puisque ça prend beaucoup de place dans le code et ce
+                          n'est pas sastisfaisant visiblement.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Type de script</td>
+                        <td>
+                          Ce site utilise 4 scripts internes et 4 scripts
+                          externes. Il n'utilise pas de jQuery ni d'autre
+                          librairie.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
+      <div id="pied">
+        <footer class="piedPage">
+          Mise en page © 2008 Elephorm et Alsacréations & Nicolas Roy / William
+          Stancu
+        </footer>
+      </div>
     </div>
-    <div id="pied">
-      <footer class="piedPage">
-        Mise en page © 2008 Elephorm et Alsacréations & Nicolas Roy / William
-        Stancu
-      </footer>
-    </div>
-  </div>
-  <script src="jquery-3.5.1.min.js"></script>
-  <script src="index.js"></script>
-</body>
-
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>

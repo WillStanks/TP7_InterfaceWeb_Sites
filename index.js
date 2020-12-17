@@ -86,6 +86,8 @@ function changerHtmlMod8() {
   divPied.remove();
   galery();
   shadow();
+  initialiseAccordeon();
+  indexAccordeon();
 }
 
 /**
@@ -101,13 +103,15 @@ function changerHtmlMod11() {
   global.appendChild(divPied);
   galery();
   shadow();
+  initialiseAccordeon();
+  indexAccordeon();
 }
 
 //--------------------------------- TP6 (jQuery) --------------------------------------//
 
 // Appelle les deux fonctions qui activent l'ombrage et la galery sur les pages.
 // lorsque le document charge.
-$(document).ready(function () { shadow(); galery(); });
+$(document).ready(function () { shadow(); galery(); initialiseAccordeon(); indexAccordeon($(location).attr("hash")); });
 
 /*-----------------------------------GALLERIE---------------------------------*/
 /**
@@ -179,4 +183,30 @@ function shadow() {
 /* Fonction qui enlève le shadow lorsqu'on change de css pour pas qui se duplique */
 function enleverShadow() {
   $("img").remove(".shadow");
+}
+
+/* ----------------------------------MENU ACCORDEON---------------------------------- */
+var accordeon;
+
+function initialiseAccordeon(){
+  accordeon = $('#accordeon').accordion({ active: false,
+    animate: {
+      duration: 2000,
+      down: {
+        easing: "easeOutBounce",
+        duration: 2000,
+      },
+    },collapsible: true, header: "h2",
+  heightStyle: "content", 
+  icons: { header: "ui-icon-plus", activeHeader: "ui-icon-minus" }});
+}
+
+function indexAccordeon(id) {
+  if(id === "#gallerie") {
+    accordeon.accordion("option", {active: 0});
+  }else if(id === "#tab1") {
+    accordeon.accordion("option", {active: 1});
+  }else if(id === "#tab2") {
+    accordeon.accordion("option", {active: 2});
+  }
 }

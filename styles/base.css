@@ -347,7 +347,7 @@ input:checked + .glisse:before {
   margin: 0 auto 50px auto;
   padding-top: 30px;
   width: 150px;
-  min-height: 250px;
+  min-height: 300px;
   text-align: center;
   list-style: none;
   z-index: 10;
@@ -374,7 +374,7 @@ input:checked + .glisse:before {
 /* Affichage des sous-éléments du menu-anime lorsqu'on survole l'éléments li */
 #menu-anime li:hover ul {
   margin-right: 15px;
-  height: 150px;
+  height: 400px;
   display: block;
   z-index: 10;
 }

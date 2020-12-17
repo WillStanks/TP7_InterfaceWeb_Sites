@@ -1,256 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag Heuer</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link id="lien-css" rel="stylesheet" href="styles/modele11.css" />
+    <link
+      href="https://code.jquery.com/ui/1.12.1/themes/dark-hive/jquery-ui.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tag Heuer</title>
-  <link rel="stylesheet" href="styles/base.css" />
-  <link id="lien-css" rel="stylesheet" href="styles/modele11.css" />
-</head>
+  <body>
+    <div id="global">
+      <div id="entete">
+        <header id="style-header">
+          <h2 class="titre">Tag Heuer</h2>
+          <div id="style-bouton-glissant">
+            <h3>Modele 8</h3>
+            <label class="switch">
+              <input type="checkbox" id="bouton-switch" checked />
+              <span class="glisse rond"></span>
+            </label>
+            <h3>Modele 11</h3>
+          </div>
+        </header>
+      </div>
+      <div id="centre">
+        <div id="centre-bis">
+          <div id="navigation">
+            <ul id="menu-anime">
+              <li class="gauche bouton1">
+                <a href="index.html">Acceuil</a>
+              </li>
+              <li class="gauche bouton2">
+                <a href="rolex.com.html">&#8627;Rolex</a>
+                <ul>
+                  <li class="item-menu">
+                    <a href="rolex.com.html#gallerie" id="sous-element">
+                      Gallerie
+                    </a>
+                  </li>
+                  <li class="item-menu">
+                    <a href="rolex.com.html#tab1" id="sous-element">
+                      Tableau 1
+                    </a>
+                  </li>
+                  <li class="item-menu">
+                    <a href="rolex.com.html#tab2" id="sous-element">
+                      Tableau 2
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gauche bouton3">
+                <a href="tagheuer.com.html">&#8627;Tag Heuer</a>
+                <ul>
+                  <li class="item-menu">
+                    <a href="rolex.com.html#gallerie" id="sous-element">
+                      Gallerie
+                    </a>
+                  </li>
 
-<body>
-  <div id="global">
-    <div id="entete">
-      <header id="style-header">
-        <h2 class="titre">Tag Heuer</h2>
-        <div id="style-bouton-glissant">
-          <h3>Modele 8</h3>
-          <label class="switch">
-            <input type="checkbox" id="bouton-switch" checked />
-            <span class="glisse rond"></span>
-          </label>
-          <h3>Modele 11</h3>
-        </div>
-      </header>
-    </div>
-    <div id="centre">
-      <div id="centre-bis">
-        <div id="navigation">
-          <ul id="menu-anime">
-            <li class="gauche bouton1">
-              <a href="index.html">Acceuil</a>
-            </li>
-            <li class="gauche bouton2">
-              <a href="rolex.com.html">&#8627;Rolex</a>
-              <ul>
-                <li class="item-menu">
-                  <a href="rolex.com.html#tab1" id="sous-element">Tableau 1</a>
-                </li>
-                <li class="item-menu">
-                  <a href="rolex.com.html#tab2" id="sous-element">Tableau 2</a>
-                </li>
-              </ul>
-            </li>
-            <li class="gauche bouton3">
-              <a href="tagheuer.com.html">&#8627;Tag Heuer</a>
-              <ul>
-                <li class="item-menu">
-                  <a href="tagheuer.com.html#tab1" id="sous-element">Tableau 1</a>
-                </li>
-                <li class="item-menu">
-                  <a href="tagheuer.com.html#tab2" id="sous-element">Tableau 2</a>
-                </li>
-              </ul>
-            </li>
-            <li class="gauche bouton4">
-              <a href="montblanc.com.html">&#8627;Mont-Blanc</a>
-              <ul>
-                <li class="item-menu">
-                  <a href="montblanc.com.html#tab1" id="sous-element">Tableau 1</a>
-                </li>
-                <li class="item-menu">
-                  <a href="montblanc.com.html#tab2" id="sous-element">Tableau 2</a>
-                </li>
-              </ul>
-            </li>
-            <li class="gauche bouton5">
-              <a href="conclusion.html">Conclusion</a>
-            </li>
-          </ul>
-        </div>
-        <div id="secondaire">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-            est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-            velit, sed quia non numquam eius modi tempora incidunt ut labore
-            et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-            veniam, quis nostrum exercitationem ullam corporis suscipit
-            laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-            vel eum iure reprehenderit qui in ea voluptate velit esse quam
-            nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-            voluptas nulla pariatur?
-          </p>
-        </div>
-        <div id="principal">
-          <section>
-            <p class="images-memo">
-              Vous pouvez cliquez sur les images pour les agrandir!
-            </p>
-            <div class="images-site">
-              <img id="img-1-p" src="images/ImageDeTag.webp" width="70" height="70" class="mini" />
-              <img id="img-2-p" src="images/ImageDeTag3.webp" width="70" height="70" class="mini" />
-              <img id="img-3-p" src="images/ImageDeTag4.webp" width="70" height="70" class="mini" />
-              <img id="img-4-p"
-                src="https://www.tagheuer.com/on/demandware.static/-/Library-Sites-TagHeuer-Shared/default/dw22fae0ee/images/homepage/09-2020/Turtoise%20Shell%20HP%20News%202.jpg"
-                width="70" height="70" class="mini" />
-              <br>
-              <img id="grande-img" height="400" width="500" src="images/ImageDeTag.webp" />
-            </div>
-            <h3>Informations générales sur le site</h3>
+                  <li class="item-menu">
+                    <a href="tagheuer.com.html#tab1" id="sous-element"
+                      >Tableau 1</a
+                    >
+                  </li>
+                  <li class="item-menu">
+                    <a href="tagheuer.com.html#tab2" id="sous-element"
+                      >Tableau 2</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="gauche bouton4">
+                <a href="montblanc.com.html">&#8627;Mont-Blanc</a>
+                <ul>
+                  <li class="item-menu">
+                    <a href="rolex.com.html#gallerie" id="sous-element">
+                      Gallerie
+                    </a>
+                  </li>
+                  <li class="item-menu">
+                    <a href="montblanc.com.html#tab1" id="sous-element"
+                      >Tableau 1</a
+                    >
+                  </li>
+                  <li class="item-menu">
+                    <a href="montblanc.com.html#tab2" id="sous-element"
+                      >Tableau 2</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="gauche bouton5">
+                <a href="conclusion.html">Conclusion</a>
+              </li>
+            </ul>
+          </div>
+          <div id="secondaire">
             <p>
-              Tag Heuer est une compagnie qui produit des montres luxueuse et
-              complexes.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <table id="tab1">
-              <thead>
-                <caption>
-                  Caractéristiques sur le site
-                </caption>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Couleur/images de fond</td>
-                  <td>
-                    Une video en en-tête du site joue automatiquement. La
-                    couleur d'arrière-plan du site est majoritairement le
-                    blanc. Les nombreuses images de montres ajoutent des
-                    variations dans le couleurs. On y retrouve du bleu, du
-                    vert et plusieurs couleurs métal.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Couleur du texte</td>
-                  <td>
-                    Les couleurs du texte sont simples; les titres et les
-                    sous-titres sont écrit en noir et les longues descriptions
-                    sont écrises en gris pâle. On retrouve parfois du texte
-                    blanc sur les arrière-plans/images sombres.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Interface de navigation</td>
-                  <td>
-                    Il y a un menu simple en haut complètement de la page. Il
-                    comporte trois grandes catégories qui se défilent en plus
-                    grands menus lorsqu'on <i>hover</i> par-dessus.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Nombre d'écrans</td>
-                  <td>
-                    6 écrans lorsqu'on défile, avec mon écran de 21 pouces.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Présence de vidéos et d'animations</td>
-                  <td>
-                    Il y a une video en haut de la page d'acceuil, lorsqu'on
-                    arrive sur le site. Il y a une petite animation lorsqu'on
-                    clique sur le logo de la compagnie: le logo se transforme
-                    en petite montre.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Publicité</td>
-                  <td>
-                    Il n'y a pas de publicité externe car c'est un site qui
-                    vend des produits (montres).
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <table class="tableau-styles" id="tab2">
-              <thead>
-                <caption>
-                  Types de contenu
-                </caption>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Version HTML</td>
-                  <td>
-                    HTML5, qu'on peut remarquer par la balise au début de la
-                    page: &lt;!DOCTYPE html>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Style de la page</td>
-                  <td>
-                    La page utilise 3 feuilles de style externes:
-                    <ol>
-                      <li>
-                        <p>
-                          Une première feuille de style globale, qui est
-                          stockée sur le même serveur que le site. On peut le
-                          remarquer par l'URL qui est identique, mais qui va
-                          chercher un autre document par un chemin précis.
-                        </p>
-                        <a class="lien-styles"
-                          href="https://www.tagheuer.com/on/demandware.static/Sites-TAG_INT-Site/-/fr_CA/v1600930641367/css/global.css">https://www.tagheuer.com/on/demandware.static/Sites-TAG_INT-Site/-/fr_CA/v1600930641367/css/global.css</a>
-                      </li>
-                      <li>
-                        <p>
-                          Une deuxième feuille de style nommée
-                          pageDesignerLayout, qui est stockée sur le même
-                          serveur que le site. On peut le remarquer par l'URL
-                          qui est identique, mais qui va chercher un autre
-                          document par un chemin précis.
-                        </p>
-                        <a class="lien-styles"
-                          href="https://www.tagheuer.com/on/demandware.static/Sites-TAG_INT-Site/-/fr_CA/v1600930641367/css/pagedesignerLayout.css">https://www.tagheuer.com/on/demandware.static/Sites-TAG_INT-Site/-/fr_CA/v1600930641367/css/pagedesignerLayout.css</a>
-                      </li>
-                      <li>
-                        <p>
-                          Une troisème feuille de style, qui est stockée sur
-                          un serveur externe. On peut le remarquer car les
-                          liens de sont pas pareils. Cette feuille de style
-                          semble être un thème externe créé par d'autres
-                          programmeurs. Le thème se nomme Algolia.
-                        </p>
-                        <a class="lien-styles"
-                          href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css">https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css</a>
-                      </li>
-                    </ol>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Type de script</td>
-                  <td>
-                    Ce site utilise plusieurs script externes et 1 script
-                    interne qui forme la structure de données. Il n'utilise
-                    pas de jQuery ni d'autre librairie.
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+              velit, sed quia non numquam eius modi tempora incidunt ut labore
+              et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+              veniam, quis nostrum exercitationem ullam corporis suscipit
+              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
+              vel eum iure reprehenderit qui in ea voluptate velit esse quam
+              nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+              voluptas nulla pariatur?
+            </p>
+          </div>
+          <div id="principal">
+            <section>
+              <div id="accordeon">
+                <h2>Gallerie</h2>
+                <div>
+                  <p class="images-memo">
+                    Vous pouvez cliquez sur les images pour les agrandir!
+                  </p>
+                  <div class="images-site">
+                    <img
+                      id="img-1-p"
+                      src="images/ImageDeTag.webp"
+                      width="70"
+                      height="70"
+                      class="mini"
+                    />
+                    <img
+                      id="img-2-p"
+                      src="images/ImageDeTag3.webp"
+                      width="70"
+                      height="70"
+                      class="mini"
+                    />
+                    <img
+                      id="img-3-p"
+                      src="images/ImageDeTag4.webp"
+                      width="70"
+                      height="70"
+                      class="mini"
+                    />
+                    <img
+                      id="img-4-p"
+                      src="https://www.tagheuer.com/on/demandware.static/-/Library-Sites-TagHeuer-Shared/default/dw22fae0ee/images/homepage/09-2020/Turtoise%20Shell%20HP%20News%202.jpg"
+                      width="70"
+                      height="70"
+                      class="mini"
+                    />
+                    <br />
+                    <img
+                      id="grande-img"
+                      height="400"
+                      width="500"
+                      src="images/ImageDeTag.webp"
+                    />
+                  </div>
+                </div>
+                <h2>Tableau Informations générales sur le site</h2>
+                <div>
+                  <h3>Informations générales sur le site</h3>
+                  <p>
+                    Tag Heuer est une compagnie qui produit des montres luxueuse
+                    et complexes.
+                  </p>
+                  <table>
+                    <thead>
+                      <caption>
+                        Caractéristiques sur le site
+                      </caption>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Couleur/images de fond</td>
+                        <td>
+                          Une video en en-tête du site joue automatiquement. La
+                          couleur d'arrière-plan du site est majoritairement le
+                          blanc. Les nombreuses images de montres ajoutent des
+                          variations dans le couleurs. On y retrouve du bleu, du
+                          vert et plusieurs couleurs métal.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Couleur du texte</td>
+                        <td>
+                          Les couleurs du texte sont simples; les titres et les
+                          sous-titres sont écrit en noir et les longues
+                          descriptions sont écrises en gris pâle. On retrouve
+                          parfois du texte blanc sur les arrière-plans/images
+                          sombres.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Interface de navigation</td>
+                        <td>
+                          Il y a un menu simple en haut complètement de la page.
+                          Il comporte trois grandes catégories qui se défilent
+                          en plus grands menus lorsqu'on
+                          <i>hover</i> par-dessus.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Nombre d'écrans</td>
+                        <td>
+                          6 écrans lorsqu'on défile, avec mon écran de 21
+                          pouces.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Présence de vidéos et d'animations</td>
+                        <td>
+                          Il y a une video en haut de la page d'acceuil,
+                          lorsqu'on arrive sur le site. Il y a une petite
+                          animation lorsqu'on clique sur le logo de la
+                          compagnie: le logo se transforme en petite montre.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Publicité</td>
+                        <td>
+                          Il n'y a pas de publicité externe car c'est un site
+                          qui vend des produits (montres).
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <h2>Tableau Types de contenu</h2>
+                <div>
+                  <table class="tableau-styles">
+                    <thead>
+                      <caption>
+                        Types de contenu
+                      </caption>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Version HTML</td>
+                        <td>
+                          HTML5, qu'on peut remarquer par la balise au début de
+                          la page: &lt;!DOCTYPE html>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Style de la page</td>
+                        <td>
+                          La page utilise 3 feuilles de style externes:
+                          <ol>
+                            <li>
+                              <p>
+                                Une première feuille de style globale, qui est
+                                stockée sur le même serveur que le site. On peut
+                                le remarquer par l'URL qui est identique, mais
+                                qui va chercher un autre document par un chemin
+                                précis.
+                              </p>
+                              <a
+                                class="lien-styles"
+                                href="https://www.tagheuer.com/on/demandware.static/Sites-TAG_INT-Site/-/fr_CA/v1600930641367/css/global.css"
+                                >https://www.tagheuer.com/on/demandware.static/Sites-TAG_INT-Site/-/fr_CA/v1600930641367/css/global.css</a
+                              >
+                            </li>
+                            <li>
+                              <p>
+                                Une deuxième feuille de style nommée
+                                pageDesignerLayout, qui est stockée sur le même
+                                serveur que le site. On peut le remarquer par
+                                l'URL qui est identique, mais qui va chercher un
+                                autre document par un chemin précis.
+                              </p>
+                              <a
+                                class="lien-styles"
+                                href="https://www.tagheuer.com/on/demandware.static/Sites-TAG_INT-Site/-/fr_CA/v1600930641367/css/pagedesignerLayout.css"
+                                >https://www.tagheuer.com/on/demandware.static/Sites-TAG_INT-Site/-/fr_CA/v1600930641367/css/pagedesignerLayout.css</a
+                              >
+                            </li>
+                            <li>
+                              <p>
+                                Une troisème feuille de style, qui est stockée
+                                sur un serveur externe. On peut le remarquer car
+                                les liens de sont pas pareils. Cette feuille de
+                                style semble être un thème externe créé par
+                                d'autres programmeurs. Le thème se nomme
+                                Algolia.
+                              </p>
+                              <a
+                                class="lien-styles"
+                                href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css"
+                                >https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css</a
+                              >
+                            </li>
+                          </ol>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Type de script</td>
+                        <td>
+                          Ce site utilise plusieurs script externes et 1 script
+                          interne qui forme la structure de données. Il
+                          n'utilise pas de jQuery ni d'autre librairie.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
+      <div id="pied">
+        <footer class="piedPage">
+          Mise en page © 2008 Elephorm et Alsacréations & Nicolas Roy / William
+          Stancu
+        </footer>
+      </div>
     </div>
-    <div id="pied">
-      <footer class="piedPage">
-        Mise en page © 2008 Elephorm et Alsacréations & Nicolas Roy / William
-        Stancu
-      </footer>
-    </div>
-  </div>
-  <script src="jquery-3.5.1.min.js"></script>
-  <script src="index.js"></script>
-</body>
-
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>

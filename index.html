@@ -1,125 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link id="lien-css" rel="stylesheet" href="styles/modele11.css" />
+    <link
+      href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Accueil</title>
-  <link rel="stylesheet" href="styles/base.css" />
-  <link id="lien-css" rel="stylesheet" href="styles/modele11.css" />
-</head>
+  <body>
+    <div id="global">
+      <div id="entete">
+        <header id="style-header">
+          <div>
+            <h2 class="titre">Nicolas Roy et William Stancu</h2>
+            <h2>Présentation de trois sites web</h2>
+          </div>
+          <div id="style-bouton-glissant">
+            <h3>Modele 8</h3>
+            <label class="switch">
+              <input type="checkbox" id="bouton-switch" checked />
+              <span class="glisse rond"></span>
+            </label>
+            <h3>Modele 11</h3>
+          </div>
+        </header>
+      </div>
+      <div id="centre">
+        <div id="centre-bis">
+          <div id="navigation">
+            <ul id="menu-anime">
+              <li class="gauche bouton1">
+                <a href="index.html">Acceuil</a>
+              </li>
+              <li class="gauche bouton2">
+                <a href="rolex.com.html">&#8627;Rolex</a>
+                <ul>
+                  <li class="item-menu">
+                    <a href="rolex.com.html#gallerie" id="sous-element">
+                      Gallerie
+                    </a>
+                  </li>
+                  <li class="item-menu">
+                    <a href="rolex.com.html#tab1" id="sous-element">
+                      Tableau 1
+                    </a>
+                  </li>
+                  <li class="item-menu">
+                    <a href="rolex.com.html#tab2" id="sous-element">
+                      Tableau 2
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gauche bouton3">
+                <a href="tagheuer.com.html">&#8627;Tag Heuer</a>
+                <ul>
+                  <li class="item-menu">
+                    <a href="rolex.com.html#gallerie" id="sous-element">
+                      Gallerie
+                    </a>
+                  </li>
 
-<body>
-  <div id="global">
-    <div id="entete">
-      <header id="style-header">
-        <div>
-          <h2 class="titre">Nicolas Roy et William Stancu</h2>
-          <h2>Présentation de trois sites web</h2>
-        </div>
-        <div id="style-bouton-glissant">
-          <h3>Modele 8</h3>
-          <label class="switch">
-            <input type="checkbox" id="bouton-switch" checked />
-            <span class="glisse rond"></span>
-          </label>
-          <h3>Modele 11</h3>
-        </div>
-      </header>
-    </div>
-    <div id="centre">
-      <div id="centre-bis">
-        <div id="navigation">
-          <ul id="menu-anime">
-            <li class="gauche bouton1">
-              <a href="index.html">Acceuil</a>
-            </li>
-            <li class="gauche bouton2">
-              <a href="rolex.com.html">&#8627;Rolex</a>
-              <ul>
-                <li class="item-menu">
-                  <a href="rolex.com.html#tab1" id="sous-element">Tableau 1</a>
-                </li>
-                <li class="item-menu">
-                  <a href="rolex.com.html#tab2" id="sous-element">Tableau 2</a>
-                </li>
-              </ul>
-            </li>
-            <li class="gauche bouton3">
-              <a href="tagheuer.com.html">&#8627;Tag Heuer</a>
-              <ul>
-                <li class="item-menu">
-                  <a href="tagheuer.com.html#tab1" id="sous-element">Tableau 1</a>
-                </li>
-                <li class="item-menu">
-                  <a href="tagheuer.com.html#tab2" id="sous-element">Tableau 2</a>
-                </li>
-              </ul>
-            </li>
-            <li class="gauche bouton4">
-              <a href="montblanc.com.html">&#8627;Mont-Blanc</a>
-              <ul>
-                <li class="item-menu">
-                  <a href="montblanc.com.html#tab1" id="sous-element">Tableau 1</a>
-                </li>
-                <li class="item-menu">
-                  <a href="montblanc.com.html#tab2" id="sous-element">Tableau 2</a>
-                </li>
-              </ul>
-            </li>
-            <li class="gauche bouton5">
-              <a href="conclusion.html">Conclusion</a>
-            </li>
-          </ul>
-        </div>
-        <div id="secondaire">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-            est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-            velit, sed quia non numquam eius modi tempora incidunt ut labore
-            et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-            veniam, quis nostrum exercitationem ullam corporis suscipit
-            laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-            vel eum iure reprehenderit qui in ea voluptate velit esse quam
-            nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-            voluptas nulla pariatur?
-          </p>
-        </div>
-        <div id="principal">
-          <section>
-            <p>Site web de rolex:</p>
-            <img src="images/ImageSiteRolex.PNG" width="400" height="200" />
-            <p>Site web de tag heuer:</p>
-            <img src="images/ImageSiteTagHeuer.PNG" width="400" height="200" />
-            <p>Site web de mont-blanc:</p>
-            <img src="images/ImageSiteMontBlanc.PNG" width="400" height="200" />
-          </section>
+                  <li class="item-menu">
+                    <a href="tagheuer.com.html#tab1" id="sous-element"
+                      >Tableau 1</a
+                    >
+                  </li>
+                  <li class="item-menu">
+                    <a href="tagheuer.com.html#tab2" id="sous-element"
+                      >Tableau 2</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="gauche bouton4">
+                <a href="montblanc.com.html">&#8627;Mont-Blanc</a>
+                <ul>
+                  <li class="item-menu">
+                    <a href="rolex.com.html#gallerie" id="sous-element">
+                      Gallerie
+                    </a>
+                  </li>
+                  <li class="item-menu">
+                    <a href="montblanc.com.html#tab1" id="sous-element"
+                      >Tableau 1</a
+                    >
+                  </li>
+                  <li class="item-menu">
+                    <a href="montblanc.com.html#tab2" id="sous-element"
+                      >Tableau 2</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="gauche bouton5">
+                <a href="conclusion.html">Conclusion</a>
+              </li>
+            </ul>
+          </div>
+          <div id="secondaire">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+              velit, sed quia non numquam eius modi tempora incidunt ut labore
+              et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+              veniam, quis nostrum exercitationem ullam corporis suscipit
+              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
+              vel eum iure reprehenderit qui in ea voluptate velit esse quam
+              nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+              voluptas nulla pariatur?
+            </p>
+          </div>
+          <div id="principal">
+            <section>
+              <p>Site web de rolex:</p>
+              <img src="images/ImageSiteRolex.PNG" width="400" height="200" />
+              <p>Site web de tag heuer:</p>
+              <img
+                src="images/ImageSiteTagHeuer.PNG"
+                width="400"
+                height="200"
+              />
+              <p>Site web de mont-blanc:</p>
+              <img
+                src="images/ImageSiteMontBlanc.PNG"
+                width="400"
+                height="200"
+              />
+            </section>
+          </div>
         </div>
       </div>
+      <div id="pied">
+        <footer class="piedPage">
+          Mise en page © 2008 Elephorm et Alsacréations & Nicolas Roy / William
+          Stancu
+        </footer>
+      </div>
     </div>
-    <div id="pied">
-      <footer class="piedPage">
-        Mise en page © 2008 Elephorm et Alsacréations & Nicolas Roy / William
-        Stancu
-      </footer>
-    </div>
-  </div>
-  <script id="jquery" src="jquery-3.5.1.min.js"></script>
-  <script id="notre-js" src="index.js"></script>
-</body>
-
+    <script id="jquery" src="jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script id="notre-js" src="index.js"></script>
+  </body>
 </html>
