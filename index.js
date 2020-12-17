@@ -153,7 +153,7 @@ function galery() {
  */
 function shadow() {
   /* Attache l'ombre a tout les éléments de la liste du menu anime */
-  $("#menu-anime > li").append('<img class="shadow" src="../images/icon-shadow.png" width="150" height="20" alt="" />');
+  $("#menu-anime > li").append('<img class="shadow" src="./images/icon-shadow.png" width="150" height="20" alt="" />');
 
   /* Fonction qui fait lever l'éléments lorsqu'on le survole pour crééer un effet de bon */
   $("#menu-anime > li").hover(
