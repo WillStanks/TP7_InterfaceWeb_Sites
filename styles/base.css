@@ -1,0 +1,428 @@
+/* ==============================================
+   FEUILLE DE STYLES DES GABARITS HTML/CSS
+   © Elephorm & Alsacreations.com
+   Conditions d'utilisation:
+   https://creativecommons.org/licenses/by/2.0/fr/
+   ============================================== */
+
+/* --- STYLES DE BASE POUR LE TEXTE ET LES PRINCIPAUX ÉLÉMENTS --- */
+
+/* Page */
+
+/* Modification faite par moi pour importer une police voulue. */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+html {
+  font-size: 100%;
+  /* Voir -> Note 1 à la fin de la feuille de styles. */
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+body {
+  margin: 0;
+  padding: 10px 20px;
+  /* Note -> 2 */
+  /* NICOLAS: Modification faite par moi pour utiliser une police de caractère voulue sur le corps au complet. */
+  font-family: "Baloo Tammudu 2", cursive;
+  /* 3 */
+  font-size: 0.9em;
+  /* -> 4 */
+  line-height: 1.25;
+  /* -> 5 */
+  color: black;
+  background: white;
+}
+
+/* Titres */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1em 0 0.5em 0;
+  /* -> 6 */
+}
+
+h1,
+h2 {
+  font-weight: normal;
+  /* -> 7 */
+}
+
+h1 {
+  font-size: 3em;
+  /* -> 8 */
+  font-style: italic;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+/* Listes */
+ul,
+ol {
+  margin: 0.75em 0 0.75em 24px;
+  padding: 0;
+  /* -> 9 */
+}
+
+ul {
+  list-style: square;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Paragraphes */
+p {
+  margin: 0.75em 0;
+}
+
+li p,
+blockquote p {
+  margin: 0.5em 0;
+}
+
+/* Citations */
+blockquote,
+q {
+  font-size: 1.1em;
+  font-style: italic;
+  font-family: Georgia, "Bitstream Vera Serif", Norasi, serif;
+}
+
+blockquote {
+  margin: 0.75em 0 0.75em 24px;
+}
+
+cite {
+  font-style: italic;
+}
+
+/* Divers éléments de type en-ligne */
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+  color: dimgray;
+}
+
+/* --- STYLES POUR CERTAINS CONTENUS DES GABARITS --- */
+
+pre,
+code {
+  font-size: 100%;
+  font-family: "Bitstream Vera Mono", "Lucida Console", "Courier New", monospace;
+}
+
+pre {
+  width: 90%;
+  overflow: auto;
+  overflow-y: hidden;
+  margin: 0.75em 0;
+  padding: 12px;
+  background: #eee;
+  color: #555;
+}
+
+pre strong {
+  font-weight: normal;
+  color: black;
+}
+
+#copyright {
+  margin: 20px 0 5px 0;
+  text-align: right;
+  font-size: 0.8em;
+  color: #848f63;
+}
+
+#copyright a {
+  color: #848f63;
+  text-decoration: none;
+}
+
+#copyright a:hover,
+#copyright a:focus {
+  text-decoration: underline;
+}
+
+/* NICOLAS: Modification faite par moi pour ajouter des bordures au tableau. */
+table {
+  border-collapse: collapse;
+}
+
+/* NICOLAS: Modification faite par moi pour ajouter des bordures blanches au tableau. */
+td,
+th {
+  border: 1px solid white;
+  padding: 10px;
+}
+
+/* NICOLAS: Modification faite par moi pour mettre de l'emphase sur le titre du tableau. */
+caption {
+  background-color: rgb(71, 104, 255);
+  color: black;
+  font-size: 20px;
+  padding: 2%;
+}
+
+/* NICOLAS: Classe personnelle créée pour modifier la conclusion (mettre flex et une direction des éléments.) */
+.conclusion {
+  display: flex;
+  /* NICOLAS:  Appliqué le display flex a la liste pour affecter tous les éléments à l'intérieur. */
+  flex-direction: column;
+}
+
+/* NICOLAS: Classe personnelle créée pour modifier les éléments de ma conclusion (ajouter une ligne de séparation en-bas). */
+.conclusion li {
+  border-bottom: 1px solid white;
+  padding: 10px;
+}
+
+/* NICOLAS: Classe personnelle créée pour modifier les titres avec une grandeur de police et une police choisie par moi. */
+.titre {
+  font-family: "Courgette", cursive;
+  font-size: 50px;
+}
+
+/* NICOLAS: Classe personnelle créée pour modifier les pieds de page avec une couleur, une police choisie et des coins arrondis. */
+.piedPage {
+  text-align: center;
+  padding: 20px;
+  background-color: firebrick;
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+/* NICOLAS: Classe personnelle créée pour modifier le tableau sur les types de contenu des pages, pour différencer les 2 tableaux. */
+.tableau-styles {
+  margin-top: 5%;
+}
+
+/* NICOLAS: Classe personnelle créée pour modifier la balise th du tableau des types de contenu pour changer la couleur de fond. */
+.tableau-styles caption {
+  background-color: orange;
+}
+
+/* NICOLAS: Id personnel qui est relié au bouton qui permet de change la direction du flexbox. */
+#direction {
+  font-family: "Courgette", cursive;
+  padding: 10px;
+  background-color: crimson;
+  color: white;
+  border-radius: 30px;
+  border-style: none;
+  cursor: pointer;
+}
+
+/*NICOLAS: Classe créée par moi pour changer le style du message qui dit qu'on peut cliquer sur les images.*/
+.images-memo {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: lime;
+}
+
+/*NICOLAS: Classe créée par moi pour bien espacer les images provenant des sites web..*/
+.images-site {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mini {
+  margin: 10px;
+}
+
+/*NICOLAS: Classe créée par moi pour changer le style du menu de navigation ainsi que le sous-menu, entre autre les couleurs et la petite animation lorsqu'on les survole.*/
+.menu-item ul {
+  display: none;
+}
+
+/*NICOLAS: Classe créée par moi pour afficher le sous-menu lorsqu'on survole un élément du menu.*/
+.menu-item:hover ul {
+  display: block;
+}
+
+/* 
+NICOLAS ET WILLIAM: Classes pour le bouton glissant qui permet de chamger le 
+gabarit.
+*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 54px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.glisse {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(139, 11, 11);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.glisse:before {
+  position: absolute;
+  content: "";
+  height: 28px;
+  width: 28px;
+  left: 0px;
+  bottom: 0px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .glisse {
+  background-color: #3500d3;
+}
+
+input:focus + .glisse {
+  box-shadow: 0 0 1px black;
+}
+
+input:checked + .glisse:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.glisse.rond {
+  border-radius: 34px;
+}
+
+.glisse.rond:before {
+  border-radius: 50%;
+}
+
+/* NICOLAS ET WILLIAM: classe qui style le header qui contient le titre et le bouton */
+#style-header {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* NICOLAS ET WILLIAM: classe qui positionne le parent du bouton glissant. */
+#style-bouton-glissant {
+  width: 220px;
+  display: inline-flex;
+  align-self: flex-end;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*------------------------------------TP6-------------------------------------*/
+
+/* Menu-anime */
+#menu-anime {
+  margin: 0 auto 50px auto;
+  padding-top: 30px;
+  width: 150px;
+  min-height: 250px;
+  text-align: center;
+  list-style: none;
+  z-index: 10;
+}
+
+/* Éléments du menu-anime */
+#menu-anime li {
+  margin-right: 15px;
+  width: 150px;
+  height: 72px;
+  position: relative;
+  padding-top: 10px;
+}
+
+/* Sous-éléments du menu-anime */
+#menu-anime li ul {
+  margin-right: 15px;
+  height: 72px;
+  display: none;
+  position: relative;
+  padding-top: 20px;
+}
+
+/* Affichage des sous-éléments du menu-anime lorsqu'on survole l'éléments li */
+#menu-anime li:hover ul {
+  margin-right: 15px;
+  height: 150px;
+  display: block;
+  z-index: 10;
+}
+
+/* Appliquer la grande image de couleurs sur tous les liens. */
+#menu-anime a,
+#menu-anime a:hover {
+  margin: 0 auto;
+  width: 122px;
+  height: 45px;
+  padding-top: 15px;
+  text-indent: 0px;
+  overflow: hidden;
+  background-image: url("../images/icons.png");
+  background-repeat: no-repeat;
+  background-size: 664px 65px;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+/* Applique la couleur dépendante de la grande image sur les liens individuels. */
+#menu-anime li.bouton1 a {
+  background-position: -3px -3px;
+}
+#menu-anime li.bouton2 a {
+  background-position: -181px -3px;
+}
+#menu-anime li.bouton3 a {
+  background-position: -359px -3px;
+}
+#menu-anime li.bouton4 a {
+  background-position: -537px -3px;
+}
+#menu-anime li.bouton5 a {
+  background-position: -3px -3px;
+}
+
+/* Applique la petite image d'ombre sur les liens. */
+#menu-anime li img.shadow {
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  z-index: 1;
+}
+
+/* Marge intérieur pour embélir la gallerie d'image. */
+#grande-img {
+  margin: 20px;
+}

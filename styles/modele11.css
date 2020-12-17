@@ -1,0 +1,141 @@
+/* ==============================================
+   FEUILLE DE STYLES DES GABARITS HTML/CSS --- 11
+   © Elephorm & Alsacreations.com
+   Conditions d'utilisation:
+   https://creativecommons.org/licenses/by/2.0/fr/
+   ============================================== */
+
+/* --- COULEURS --- */
+
+/* Général */
+body {
+  color: white;
+  /* NICOLAS: Modification de l'arriere-plan pour le rendre plus beau avec des images.*/
+  background-image: url("../images/tuile.jpg");
+  background-repeat: repeat;
+}
+strong {
+  color: white;
+}
+
+/* Conteneur central */
+#centre {
+  background: url("../images/11-colgauche.png") repeat-y left top;
+}
+#centre-bis {
+  background: url("../images/11-coldroite.png") repeat-y right top;
+}
+
+/* Navigation */
+#navigation {
+  background: #282828;
+}
+#navigation a {
+  color: white;
+}
+#navigation li:nth-of-type(2) {
+  color: white;
+}
+
+/* Contenu principal */
+#principal {
+  color: white;
+  background: #3500d3;
+  min-height: 100vh;
+}
+#principal a {
+  color: lime;
+}
+#principal a:hover,
+#principal a:focus {
+  color: lime;
+}
+#principal strong {
+  color: #190061;
+}
+
+/* Contenu secondaire */
+#secondaire {
+  background: #282828;
+}
+
+/* --- POSITIONNEMENT --- */
+
+/* Page */
+body {
+  padding: 20px 5px;
+}
+#global {
+  width: 90%;
+  max-width: 90em;
+  min-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* En-tête */
+#entete {
+  padding: 20px 0;
+}
+#entete h1 {
+  margin: 0;
+}
+#entete h1 img {
+  float: left;
+  margin: 7px 20px 10px 0;
+}
+#entete .sous-titre {
+  margin: 4px 0 15px 0;
+}
+
+/* Bloc central */
+#centre-bis {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Menu de navigation */
+#navigation {
+  float: left;
+  width: 180px;
+}
+#navigation ul {
+  margin: 0;
+  margin-left: 15px;
+  list-style: none;
+}
+
+/* Contenu principal */
+#principal {
+  margin-left: 200px;
+  margin-right: 260px;
+  padding: 10px 20px;
+}
+#principal > :first-child {
+  margin-top: 10px;
+}
+#principal p,
+#principal li {
+  line-height: 1.5;
+}
+
+/* Contenu secondaire */
+#secondaire {
+  float: right;
+  width: 200px;
+  padding: 12px 20px;
+}
+
+/* Pied de page */
+#pied {
+  margin: 0;
+  padding: 15px 260px 10px 200px;
+  font-size: 0.85em;
+}
+
+/* Mention de copyright */
+#copyright {
+  margin: 8px 0 0 0;
+  font-size: 1em;
+  text-align: left;
+}
