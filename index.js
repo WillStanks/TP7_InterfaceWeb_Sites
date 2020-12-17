@@ -109,8 +109,9 @@ function changerHtmlMod11() {
 
 //--------------------------------- TP6 (jQuery) --------------------------------------//
 
-// Appelle les deux fonctions qui activent l'ombrage et la galery sur les pages.
+// Appelle les 3 fonctions qui activent l'ombrage et la galery sur les pages.
 // lorsque le document charge.
+// $(location).attr("hash") permet de trouver sur quel élément on a cliqué.
 $(document).ready(function () { shadow(); galery(); initialiseAccordeon(); indexAccordeon($(location).attr("hash")); });
 
 /*-----------------------------------GALLERIE---------------------------------*/
@@ -188,25 +189,36 @@ function enleverShadow() {
 /* ----------------------------------MENU ACCORDEON---------------------------------- */
 var accordeon;
 
-function initialiseAccordeon(){
-  accordeon = $('#accordeon').accordion({ active: false,
+/**
+ * Fonction qui initialise le menu accordéon pour la page.
+ */
+function initialiseAccordeon() {
+  accordeon = $('#accordeon').accordion({
+    active: false,
     animate: {
       duration: 2000,
       down: {
         easing: "easeOutBounce",
         duration: 2000,
       },
-    },collapsible: true, header: "h2",
-  heightStyle: "content", 
-  icons: { header: "ui-icon-plus", activeHeader: "ui-icon-minus" }});
+    }, collapsible: true, header: "h2",
+    heightStyle: "content",
+    icons: { header: "ui-icon-plus", activeHeader: "ui-icon-minus" }
+  });
 }
 
+/**
+ * Fonction qui analyse l'url de la page courant et active le bon item du
+ * menu accordéon.
+ * 
+ * @param {string} id - La partie du menu à ouvrir.
+ */
 function indexAccordeon(id) {
-  if(id === "#gallerie") {
-    accordeon.accordion("option", {active: 0});
-  }else if(id === "#tab1") {
-    accordeon.accordion("option", {active: 1});
-  }else if(id === "#tab2") {
-    accordeon.accordion("option", {active: 2});
+  if (id === "#gallerie") {
+    accordeon.accordion("option", { active: 0 });
+  } else if (id === "#tab1") {
+    accordeon.accordion("option", { active: 1 });
+  } else if (id === "#tab2") {
+    accordeon.accordion("option", { active: 2 });
   }
 }
